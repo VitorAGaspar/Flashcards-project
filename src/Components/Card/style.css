@@ -1,0 +1,9 @@
+.c-deck__card {
+    width: 100px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    margin: 0;
+}
