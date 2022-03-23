@@ -1,5 +1,27 @@
-.c-deck__section {
+.c-add {
     display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.c-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.c-form__input {
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    color: #1f1f1f;
+}
+
+.c-deck__section {
+    padding: 0 40px 0 40px;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
     gap: 24px;
     margin-top: 20px;
 }
@@ -8,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    min-width: 100px;
     height: 150px;
     background-color: #f1f1f1;
     border-radius: 10px;

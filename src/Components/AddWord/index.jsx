@@ -17,32 +17,36 @@ const AddWord = () => {
 
     return (
         <div>
-            <form onSubmit={(e) => handleSubmit(e)}>
-                <input
-                    type="text"
-                    placeholder="Insira uma palavra"
-                    value={inputWord.word}
-                    onChange={(e) =>
-                        setInputWord((prev) => {
-                            return { ...prev, word: e.target.value };
-                        })
-                    }
-                />
-                <input
-                    type="text"
-                    placeholder="Insira a definição"
-                    value={inputWord.definition}
-                    onChange={(e) =>
-                        setInputWord((prev) => {
-                            return {
-                                ...prev,
-                                definition: e.target.value,
-                            };
-                        })
-                    }
-                />
-                <button type="submit">Click</button>
-            </form>
+            <div className="c-add">
+                <form onSubmit={(e) => handleSubmit(e)} className="c-form">
+                    <input
+                        className="c-form__input"
+                        type="text"
+                        placeholder="Insira uma palavra"
+                        value={inputWord.word}
+                        onChange={(e) =>
+                            setInputWord((prev) => {
+                                return { ...prev, word: e.target.value };
+                            })
+                        }
+                    />
+                    <input
+                        className="c-form__input"
+                        type="text"
+                        placeholder="Insira a definição"
+                        value={inputWord.definition}
+                        onChange={(e) =>
+                            setInputWord((prev) => {
+                                return {
+                                    ...prev,
+                                    definition: e.target.value,
+                                };
+                            })
+                        }
+                    />
+                    <button type="submit">Click</button>
+                </form>
+            </div>
             <section className="c-deck__section">
                 {deck.map((e, i) => {
                     return (
