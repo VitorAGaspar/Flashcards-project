@@ -1,5 +1,26 @@
-.c-card {
+.c-deck {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    cursor: pointer;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 3px rgba(52, 52, 52, 0.05);
+}
+
+.c-deck__name {
+    font-size: 2rem;
+    color: rgb(47, 47, 49);
+}
+
+.c-deck__length {
+    margin: 4px 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(117, 117, 119);
+}
+
+.c-button__delete {
+    background-color: #1c6e8c;
 }
